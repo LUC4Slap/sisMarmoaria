@@ -1,0 +1,60 @@
+.cadastro {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.div__campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.div__campo:nth-child(2) {
+  margin-top: 15px;
+}
+
+.div__campo label {
+  font-size: 20px;
+  color: #fff;
+}
+
+.div__campo input {
+  padding: 5px;
+  margin-top: 3px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 30px;
+}
+
+.div__campo input:focus {
+  outline: none;
+}
+
+.form__cadastro {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form__cadastro h3 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn_cadastrar input[type="submit"] {
+  padding: 10px;
+  background-color: var(--btn);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}

@@ -1,0 +1,36 @@
+body{
+  background-color: #333;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+.login {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.login input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.login h3 {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.login input[type=submit] {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.orcamentos {
+  width: 100%;
+  height: 100%;
+}
+
+.selects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.selects label {
+  color: #fff;
+  font-size: 20px;
+}
+
+.select__cliente,
+.select__pedra {
+  display: flex;
+  flex-direction: column;
+}
+.select__cliente {
+  margin-right: 20px;
+}
+
+.select__cliente select,
+.select__pedra select {
+  width: 300px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.btn__incluir {
+  margin-left: 15px;
+  padding-top: 30px;
+}
+
+.btn__incluir input {
+  padding: 6px;
+  background-color: var(--bgMenu);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
