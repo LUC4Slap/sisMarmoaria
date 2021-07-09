@@ -10,6 +10,7 @@ export default function Orcamento() {
   const [pedras, setpedras] = useState([]);
   const [cliente, setCliente] = useState(null);
   const [pedra, setPedra] = useState(null);
+  const [infoCiente, setInfoCiente] = useState([]);
 
   useEffect(() => {
     async function buscaInfo() {
@@ -34,12 +35,13 @@ export default function Orcamento() {
 
   const handleOrcamento = (e) => {
     e.preventDefault();
-    generatePDF(cliente, pedra);
+    generatePDF(cliente, pedra, infoCiente);
   };
 
   const alteraCliente = (e) => {
     let clienteSelect = e.target.value;
-    console.log(clienteSelect);
+    let clienteInfo = clientes.filter((val) => val.nome == clienteSelect);
+    setInfoCiente(clienteInfo[0]);
     setCliente(clienteSelect);
   };
 
