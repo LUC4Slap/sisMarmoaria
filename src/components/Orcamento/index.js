@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import Menu from "../Menu";
 import { db, storage } from "../../database/firebase";
+
+import generatePDF from "../../utils/generatePDF";
+
 export default function Orcamento() {
   const [clientes, setClientes] = useState([]);
   const [pedras, setpedras] = useState([]);
@@ -31,7 +34,7 @@ export default function Orcamento() {
 
   const handleOrcamento = (e) => {
     e.preventDefault();
-    alert("teste");
+    generatePDF(cliente, pedra);
   };
 
   const alteraCliente = (e) => {
